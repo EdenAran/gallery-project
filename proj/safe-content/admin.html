@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="css/admin-page.css">
+</head>
+
+<body onload="renderTable()">
+    <h1>Admin Page</h1>
+    <section class="container">
+        <div class="header">
+            <a href="index.html">Back to main site</a>
+            <div class="display">
+                <div class="sort">
+                    <label>Sort by&ensp;</label>
+                    <select class="sort" onchange="onSetSort(this.value)">
+                        <option value="NAME">Name</option>
+                        <option value="LOGIN">Last login</option>
+                    </select>
+                </div>
+                <button onclick="onLogoutPress()" class="logout-btn">Logout</button>
+                <div class="display-type">
+                    <input type="radio" id="table" name="display">
+                    <label for="table" onclick="onDisplay('TABLE')" class="display-table"><img src="img/table-on.png"></label>
+                    <input type="radio" id="cards" name="display">
+                    <label for="cards" onclick="onDisplay('CARDS')" class="display-cards"><img src="img/cards-off.png"></label>    
+                </div>
+            </div>
+        </div>
+        <div class="users">
+            
+        </div>
+    </section>
+    <script src="js/services/storage-service.js"></script>
+    <script src="js/services/admin-service.js"></script>
+    <script src="js/services/util-service.js"></script>
+    <script src="js/admin-controller.js"></script>
+
+</html>

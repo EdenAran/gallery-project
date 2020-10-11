@@ -1,0 +1,61 @@
+body {
+    background-color: black;
+    color: white
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    text-align: center
+}
+
+.cell img {
+    width: 25px;
+    height: auto
+}
+
+.floor {
+    background-color: gray
+}
+
+.passage {
+    background-color: rgb(172, 169, 169)
+}
+
+.wall {
+    background-color: brown
+}
+
+.score {
+    text-align: center;
+    width: 80px;
+    border: 1px white solid;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    left: 180px;
+    top: 200px;
+    color: red;
+    text-align: center;
+    font-size: 50px;
+    margin: auto;
+    width: 200px;
+    height: 60px;
+    background-color: honeydew;
+    opacity: 0.7;
+    border: 2px yellow solid;
+}
+
+.modal button{
+    position: inherit;
+}
+
+.reset{
+    display: none;
+}
+
+table {
+    margin: 0 auto
+}

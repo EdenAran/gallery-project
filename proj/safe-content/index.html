@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Content</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="init()">
+    <h1>Safe Content Project</h1>
+    <div class="container">
+        <section class="login">
+            <div>
+                <label >Username: </label>
+                <input type="text" class="username" placeholder="UserName" value="Admin">
+            </div>
+            <div>
+                <label>Password: </label>
+                <input type="text" class="password" placeholder="password" value="123">
+            </div>
+            <button class="login-btn" onclick="onLoginPress()">Login</button>
+        </section>
+        <section class="main-container hide">
+            <header class="header">
+                <p>Welcome <span></span></p>
+                <div class="nav">
+                    <button class="logout-btn" onclick="onLogoutPress()">Logout</button>
+                    <a class="admin-link hide" href="admin.html">Admin Site</a>
+                </div>
+            </header>
+            <div class="content">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, eos, ut mollitia distinctio corrupti ipsa pariatur omnis earum eligendi amet fugiat expedita eaque obcaecati! Repudiandae dolores assumenda ex eum autem harum porro iure fugit! Atque dolor libero illum alias beatae eaque, nemo, ipsa pariatur voluptatem tempora deleniti rem perferendis provident fugiat officiis quod. Eos dolorum vitae illum velit sint unde provident quisquam eligendi minus neque, ullam voluptate dicta expedita commodi dolorem tempora nemo, eum accusantium sunt nulla molestiae! Porro soluta incidunt nulla quo. Earum sed ratione voluptas repudiandae iure commodi neque magni illum libero consequuntur eum quas repellendus minima totam quidem dolor qui sunt doloribus, excepturi a recusandae. Explicabo illum laborum animi! Velit reprehenderit eligendi modi fuga libero eum commodi ipsa recusandae iste beatae nesciunt voluptatem, distinctio, laborum optio quos et temporibus cumque. Consectetur dolorum qui voluptas sapiente ullam aliquam voluptatem saepe consequuntur pariatur illum, aperiam adipisci voluptate inventore magni soluta. Nulla, ullam omnis! Voluptatibus est eos soluta unde reiciendis in assumenda autem maiores cumque. Non omnis illum deleniti rem magnam voluptates sapiente quis eos eum atque animi eaque, maiores inventore excepturi perspiciatis beatae, pariatur nam. Illo, sint saepe quisquam voluptate amet delectus architecto ex maiores pariatur atque animi voluptatum sed harum? Reiciendis voluptate, maxime nemo soluta atque mollitia voluptas libero eos dolore, illum totam at? Ipsam aperiam voluptates soluta fugiat vitae quo laboriosam natus blanditiis adipisci minus est suscipit neque nam quas exercitationem laudantium, ullam, accusamus sunt dolorem consequuntur vel error deserunt voluptatem dolor. Id eos magni nihil assumenda?</p>    
+            </div>
+        </section>
+
+    </div>
+
+
+    <script src="js/services/storage-service.js"></script>
+    <script src="js/services/util-service.js"></script>
+    <script src="js/services/users-service.js"></script>
+    <script src="js/safe-content-controller.js"></script>
+</body>
+
+</html>

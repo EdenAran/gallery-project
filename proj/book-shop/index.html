@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Shop</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="init()">
+    <h1>Book Shop</h1>
+    <div class="container">
+        <header></header>
+        <section class="book-container">
+            <div class="add-book">
+                <button class="btn" onclick="onNewBook()">Add Book</button>
+                <input type="text" placeholder="Book Name" class="new-name">
+                <input type="number" placeholder="Price" class="new-price">
+            </div>
+            <div class="theader">
+                <div class="box id sorter" onclick="onSort('ID')">Id</div>
+                <div class="box title sorter" onclick="onSort('TITLE')">Title</div>
+                <div class="box price sorter" onclick="onSort('PRICE')">Price</div>
+                <div class="box actions">Actions</div>
+            </div>
+            <div class="books">
+            </div>
+            <p class="sort-by">Sorted By: <span></span></p>
+        </section>
+        <section class="book-details" hidden>
+            <button onclick="onCloseModal()" class="btn">close</button>
+            <h2></h2>
+            <p></p>
+            Rating (0-10)
+            <div class="rating">
+                <label for="rating" onclick="onRateBook(false)"><img src="img/minus.png"></label>
+                <input type="number" min="0" max="10" onchange="onRate()" readonly>
+                <label for="rating" onclick="onRateBook(true)"><img src="img/plus.png"></label>
+            </div>
+        </section>
+        <section class="page">
+            <div onclick=onTurnPage(-1)>-</div>
+            <div class="page-num">1</div>
+            <div onclick=onTurnPage(1)>+</div>
+        </section>
+        <footer></footer>
+    </div>
+
+    <script src="js/storage-service.js"></script>
+    <script src="js/util-service.js"></script>
+    <script src="js/book-service.js"></script>
+    <script src="js/book-shop-controller.js"></script>
+</body>
+
+</html>
+

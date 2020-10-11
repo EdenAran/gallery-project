@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    background-color: rgba(245, 211, 167, 0.507);
+}
+
+header {
+    height: 60px;
+    background-color: rgba(250, 214, 168, 0.664);
+}
+
+footer {
+    height: 60px;
+    background-color: rgba(199, 169, 131, 0.507);
+    width: 100%;
+}
+
+.book-container {
+    margin: 10px auto;
+    height: 100%;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    margin: 5px;
+    background-color: rgba(248, 245, 234, 0.555);
+    border-radius: 10px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.theader {
+    display: flex;
+    font-size: 1.7em;
+}
+
+.sorter {
+    cursor: pointer;
+}
+
+.sorter:hover {
+    background-color: rgba(248, 245, 234, 1);
+}
+
+.sorter:active {
+    transform: scale(0.95);
+}
+
+.sort-by{
+    font-size: 1.6em;
+}
+
+.sort-by span {
+    padding: 10px;
+}
+
+/* .theader:not(:first-child){
+    cursor: pointer;
+} */
+
+.books {
+    display: flex;
+    flex-direction: column;
+}
+
+.book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.id {
+    width: 90px;
+}
+
+.title {
+    width: 350px;
+}
+
+.price {
+    width: 200px;
+}
+
+.price input{
+    width:100px;
+    text-align:center;
+    font-size: 1em;
+}
+
+.actions {
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly
+}
+
+.book-details {
+    position: absolute;
+    width: 500px;
+    height: 80%;
+    right: 0;
+    background-color: rgb(255, 219, 140);
+}
+
+.btn {
+    margin: 5px;
+    padding: 2px;
+    width: 100px;
+}
+
+.book-img {
+    width: 80%;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    margin: auto;
+}
+
+.rating label {
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating img {
+    width: 18px;
+}
+
+.rating>* {
+    width: 30px;
+    text-align: center;
+}
+
+.page{
+    font-size: 1.5em;
+    margin: auto;
+    display: flex;
+    width: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-num{
+    margin:2px;
+    width: 35px;
+    background-color: rgba(255, 197, 110, 0.6);
+}
+
+
+.page div:not(.page-num){
+    background-color: rgb(255, 197, 110);
+    width:25px;
+    cursor: pointer;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
