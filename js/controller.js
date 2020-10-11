@@ -40,3 +40,10 @@ function openProject(id) {
     console.log(id)
     window.open(`proj/${id.name}/index.html`);
 }
+
+function onSubmit(){
+    var subject = document.querySelector('.subject input').value;
+    var body = document.querySelector('textarea').value;
+    var strEmail = `https://mail.google.com/mail/?view=cm&fs=1&to=edenaran@gmail.com&su=${subject}&body=${body}`;
+    window.open(strEmail);
+}

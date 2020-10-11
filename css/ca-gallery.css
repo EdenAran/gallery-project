@@ -84,7 +84,7 @@ body {
 .offcanvas-aside {
     position: fixed;
     height: 100%;
-    background: red;
+    background: rgba(255, 233, 224, 0.966);
     width: 80vw;
     right: -80vw;
     z-index: 10;
@@ -767,3 +767,4 @@ fieldset[disabled] .btn-xl:hover {
     padding-right: 0;
     padding-left: 0;
 }
+
