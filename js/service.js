@@ -1,6 +1,6 @@
 'use strict';
 
-var gProject = [
+var gProjects = [
     {
         id: 'pacman',
         name: 'Pacman',
@@ -13,7 +13,7 @@ var gProject = [
     {
         id: 'minesweeper',
         name: 'Minesweeper',
-        title: 'My version of minesweeper',
+        title: 'Minesweeper with some upgrades',
         desc: 'A little different minesweeper game with some more utilities I added',
         url: './proj/minesweeper',
         publishedAt: 1448693950000,
@@ -56,3 +56,7 @@ var gProject = [
         labels: []
     },
 ];
+
+function getProjects(){
+    return gProjects;
+}
