@@ -9,7 +9,7 @@ var gProjects = [
         desc: 'A little different minesweeper game with some more utilities I added.',
         url: './proj/minesweeper',
         publishedAt: 1589993942000,
-        labels: []
+        labels: ['Game', 'Matrixes']
     },
     {
         id: 'book-shop',
@@ -18,7 +18,7 @@ var gProjects = [
         desc: 'A demo version of my online book shop.',
         url: './proj/book-shop',
         publishedAt: 1587993942000,
-        labels: []
+        labels: ['E-Commerce', 'Books']
     },
     {
         id: 'proj-todos',
@@ -27,7 +27,7 @@ var gProjects = [
         desc: 'I made an online todo list for easy tracking of your todos.',
         url: './proj/proj-todos',
         publishedAt: 1584693942000,
-        labels: []
+        labels: ['Self-Help', 'Management']
     },
     {
         id: 'pacman',
@@ -45,7 +45,7 @@ var gProjects = [
         desc: 'In this site we have some hidden content with access only to the registered users and also an Admin page.',
         url: './proj/safe-content',
         publishedAt: 1588993942000,
-        labels: []
+        labels: ['Admin', 'Management']
     },
     {
         id: 'chess',
@@ -54,7 +54,7 @@ var gProjects = [
         desc: 'A demo version of a chess game, not fully functioning.',
         url: './proj/chess',
         publishedAt: 1586909394200,
-        labels: []
+        labels: ['Matrixes', 'Board', 'Game']
     }
 ];
 
