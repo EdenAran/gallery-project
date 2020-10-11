@@ -1,14 +1,14 @@
 'use strict';
 
-function initPage(){
+function initPage() {
     renderProjects();
 }
 
 function renderProjects() {
     var projects = getProjects();
     var strHTML = projects.map(function (project) {
-        return `<div class="col-md-4 col-sm-6 portfolio-item">
-        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal" data-id="${project.id}">
+        return `<div class="col-md-4 col-sm-6 portfolio-item" onclick="renderModal('${project.id}')">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal" ">
           <div class="portfolio-hover">
             <div class="portfolio-hover-content">
               <i class="fa fa-plus fa-3x"></i>
@@ -25,6 +25,18 @@ function renderProjects() {
     document.querySelector('.my-projects').innerHTML = strHTML;
 }
 
+function renderModal(projId) {
+    var project = getProjectById(projId);
+    var date = new Date(project.publishedAt).toLocaleDateString()
+    document.querySelector('.modal-name').innerText = project.name;
+    document.querySelector('.modal-title').innerText = project.title;
+    document.querySelector('.modal-img').src = `img/portfolio/${project.id}.png`;
+    document.querySelector('.modal-description').innerText = project.desc;
+    document.querySelector('.modal-date').innerText = date;
+    document.querySelector('.project-btn').name = projId;
+}
 
-
-
+function openProject(id) {
+    console.log(id)
+    window.open(`proj/${id.name}/index.html`);
+}
