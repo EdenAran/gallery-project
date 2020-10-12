@@ -47,9 +47,9 @@ function openProject(id) {
 }
 
 function onSubmit() {
-  var email = document.querySelector('.email input').value;
+  var email = 'My email is: ' + document.querySelector('.email input').value;
   var subject = document.querySelector('.subject input').value;
-  var body = document.querySelector('textarea').value;
+  var body = document.querySelector('textarea').value.split("\n").join('%0D%0A');   
   var strEmail = `https://mail.google.com/mail/?view=cm&fs=1&to=edenaran@gmail.com&su=${subject}&body=${body}%0D%0A${email}`;
   window.open(strEmail);
 }
